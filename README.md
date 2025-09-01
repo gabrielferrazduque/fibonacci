@@ -1,5 +1,5 @@
-# fibonacci
-fibonacci
+#src/fibonacci.c
+#fibonacci
 // fibonacci.c 
 // fibonacci.c
 // Autor: [Gabriel Ferraz Duque]
@@ -22,6 +22,20 @@ int fibonacci(int n) {
     }
     return resultado;
 }
+
+#Edite src/fibonacci.c para implementar fibonacci(int n) retornando o n-ésimo termo (1→1, 2→1, 3→2 ...).
+Use APENAS um unified diff com as linhas alteradas.
+
+Critérios:
+- Iterativo, O(n), int64_t.
+- Trate n <= 0 como erro (retorne -1).
+- Para n >= 93, retorne -2 (overflow em int64_t).
+- Mantenha cabeçalho e comentários existentes.
+
+Verificação esperada:
+- n=1→1, n=2→1, n=7→13, n=50→12586269025
+- n=0→-1, n=93→-2
+
 
 int main() {
     int termo;
